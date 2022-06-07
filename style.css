@@ -1,0 +1,219 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	width: 100%;
+	font-family: 'Roboto' ,sans-serif;
+	min-width: 1024px;
+	max-width: 1400px;
+	background: #fafafa;                                                                                                                                                                                                                                            
+}
+nav{
+	min-width: 1024px;
+	max-width: 1400px;
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	border-bottom: solid #dbdbdb 1px;
+	background-color: #fff;
+	height: 60px;
+}
+.logo img{
+	margin-right: 250px;
+}
+.logo{
+	width: 80%;
+	margin: auto;
+	display: flex;
+	justify-self: space-between;
+	align-items: center;
+	padding: 10px 50px;
+	cursor: pointer;
+}
+.busca{
+	width: 265px;
+	height: 38px;
+	border-radius: 7px;
+	display: flex;
+	align-items: center;
+	background-color: #efefef;
+	padding: 5px;
+}
+.busca input{
+	border: 0;
+	background-color: #efefef;
+	outline: none;
+	margin-left: 10px;
+}
+.busca svg{
+	margin-left: 10px;
+}
+.iconos{
+	margin-left: 80px;
+	display: flex;
+}
+.iconos svg{
+	margin: 0 8px;
+	cursor: pointer;
+}
+.iconos img{
+	width: 25px;
+	height: 25px;
+	border-radius: 50px;
+	margin: 0 8px;
+}
+header{
+	width: 60%;
+	margin: auto;
+	transform: translateY(70px);
+	padding: 20px 0;
+}
+.perfil-container{
+	display: flex;
+}
+header img{
+	border-radius: 50%;
+	height: 150px;
+	width: 150px;
+	cursor: pointer;
+}
+.contenedor-cabezera{
+	margin-left: 100px;
+}
+.cabezera1, .cabezera2{
+	display: flex;
+	margin-bottom: 20px;
+}
+.cabezera1 h1{
+	font-size: 28px;
+	font-weight: 300;
+	color: rgba(var(--i1d,38,38,38),1);
+}
+.cabezera1 button{
+	border-radius: 4px;
+	background-color: transparent;
+	border: 1px solid #dbdbdb;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+	font-weight: 600;
+	font-size: 14px;
+	padding: 0 10px;
+	margin: 0 15px 0 30px;
+	height: 30px;
+	cursor: pointer;
+	color: black;
+}
+.cabezera1 svg{
+	margin-top: 5px;
+}
+.cabezera2 .seguidores{
+	margin: 0 40px 0 40px;
+}
+.cabezera3{
+	line-height: 24px;
+}
+.cabezera3 h2{
+	font-size: 16px;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+	font-weight: 600;
+}
+
+main{
+	transform: translateY(100px);
+	width: 70%;
+	margin: auto;
+}
+.linea{
+	height: 1px;
+	background-color: #dbdbdb;
+	width: auto;
+}
+.main-nav{
+	display: flex;
+	justify-content: space-between;
+	width: 65%;
+	margin: auto;
+	padding: 20px;
+	align-items: center;
+}
+.main-nav a{
+	text-decoration: none;
+	color: #8e8e8e;
+	font-size: 13px;
+	font-weight: 600;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+.galeria{
+	display: grid;
+	grid-template-columns: repeat(3, 31%);
+	grid-template-rows: repeat(9, 24%);
+	gap: 3.2%;
+	height: auto;
+}
+.galeria img{
+	cursor: pointer;
+	width: 100%;
+}
+
+.foot1{
+	display: flex;
+	justify-content: space-between;
+	margin: auto;
+	width: 76%;
+	color: #8e8e8e;
+	font-size: 12px;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+	padding-top: 200px;
+	padding-bottom: 15px;
+}
+.foot1 p{
+	cursor: pointer;
+}
+.foot2{
+	display: flex;
+	justify-content: center;
+	margin: auto;
+	color: #8e8e8e;
+	font-size: 12px;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+	padding-bottom: 60px;
+}
+.foot2 p{
+	margin: 0 12px 0 12px;
+}
+
+
+
+/*RESPONSIVE*/
+
+@media screen and (min-width:  1400px){
+	nav{
+		min-width: 1400px;
+		max-width: 1800px;
+		padding-left: 150px;
+	}
+	header{
+		padding-left: 130px;
+	}
+	main{
+		padding-left: 130px;
+	}
+	.main-nav{
+		width: 80%;
+		padding-left: 110px;
+	}
+	.linea{
+		width: 940px;
+	}
+	.galeria{
+		display: grid;
+		grid-template-columns: repeat(3, 35%);
+		grid-template-rows: repeat(9, 24%);
+		gap: 3.2%;
+		height: auto;
+	}
+	footer{
+		margin-left: 220px;
+	}
+}
